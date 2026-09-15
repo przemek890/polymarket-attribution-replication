@@ -1,0 +1,11 @@
+{
+  "title": "Replication package: capital flows and blockchain forensics on decentralised prediction markets",
+  "description": "Data and code that reproduce the price, trade, account and transfer calculations reported in a study of anomalous trading and blockchain attribution on decentralised prediction markets. Inputs are historical extracts from public APIs and public Polygon ledger records; reproduce.py verifies the SHA-256 hash of every input and recomputes all reported figures.",
+  "upload_type": "dataset",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "creators": [
+    {"name": "Janiszewski, Przemyslaw", "affiliation": ""}
+  ],
+  "keywords": ["prediction markets", "blockchain forensics", "attribution", "open-source intelligence", "reproducibility"]
+}
