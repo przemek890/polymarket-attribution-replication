@@ -142,3 +142,11 @@ common beneficial ownership.
 ## Licensing
 
 The data files (`data/`, `*.csv`, `expected_results.json`, `source_manifest.json`) are released under CC-BY-4.0 (`LICENSE`). The analysis script `reproduce.py` is released under the MIT licence (`LICENSE-CODE`).
+
+## Note on addresses
+
+All addresses in this package are public ledger addresses. The Venezuelan address is
+given in full because the public regulatory complaint discloses it in truncated form
+and the Polygon ledger is public; the link between the address and a named person
+rests on the public legal filings, not on these data. No platform-user profile fields
+are included.
