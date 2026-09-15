@@ -43,7 +43,7 @@
     "sha256": "d5d605d978a5df90b71bd2de9f570ecb1516efa8cf9cde0b9f36d394f849151c",
     "source": "Polymarket data API, account activity of the five reported accounts",
     "request": "https://data-api.polymarket.com/activity?user={proxy_wallet}&start=1771200000&end=1773500000&limit=500&offset=0",
-    "note": "One request per account, keyed by address; profile fields removed. Only records of the focal condition ID are used, so the window does not affect the results."
+    "note": "One request per account, keyed by address; profile fields removed. The focal totals use only records of the focal condition ID, so the window does not affect them; the count of accounts first active on or after 24 February 2026 uses all records in this extract and therefore refers to the retrieved window, which begins on 16 February 2026."
   },
   {
     "path": "data/iran_price_history.json",
