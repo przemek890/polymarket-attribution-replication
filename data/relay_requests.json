@@ -1,0 +1,126 @@
+[
+ {
+  "transfer": "0x539ff1e33b7a64c19b3b44e2cc939f295a836ecde1d0312ea8184762c66957ea",
+  "relay_request_id": "0x19391d58ae1b5a0277d523f7015dc1a60a851d444e3ef4d7151ffd238d7fd297",
+  "status": "success",
+  "user": "0x7e91d168ab54bb2065553a4acc385481c05abb62",
+  "recipient": "0xdfDcD929644E720a472E246d257DfA4BBcF8C7C7",
+  "in_txs": [
+   {
+    "chain_id": 137,
+    "hash": "0x0fef06f2fd0722aa9176c25cba766980396df9c69e734a7172d88d9bdcf92261",
+    "timestamp": 1775664381
+   }
+  ],
+  "out_txs": [
+   {
+    "chain_id": 137,
+    "hash": "0x539ff1e33b7a64c19b3b44e2cc939f295a836ecde1d0312ea8184762c66957ea",
+    "timestamp": 1775664389
+   }
+  ],
+  "currency_in": {
+   "symbol": "USDC",
+   "chain_id": 137,
+   "amount": "150000.0006"
+  },
+  "currency_out": {
+   "symbol": "USDC.e",
+   "chain_id": 137,
+   "amount": "149969.998367"
+  }
+ },
+ {
+  "transfer": "0x661a3f51c96d439c85313b3d77b18f35f7c8aa8cf93cdc4a987b6aa11dd87280",
+  "relay_request_id": "0xd316e2f97b4f91dbf1d9993827b925c8b85fddb10c74e22bc67bfabfdb96663d",
+  "status": "success",
+  "user": "0x7e91d168ab54bb2065553a4acc385481c05abb62",
+  "recipient": "0xdfDcD929644E720a472E246d257DfA4BBcF8C7C7",
+  "in_txs": [
+   {
+    "chain_id": 137,
+    "hash": "0x2acf01ccfa40208b281536fc1b8c8a9a909202e482c485c39d9e42a7919c36d5",
+    "timestamp": 1775747725
+   }
+  ],
+  "out_txs": [
+   {
+    "chain_id": 137,
+    "hash": "0x661a3f51c96d439c85313b3d77b18f35f7c8aa8cf93cdc4a987b6aa11dd87280",
+    "timestamp": 1775747731
+   }
+  ],
+  "currency_in": {
+   "symbol": "USDC",
+   "chain_id": 137,
+   "amount": "250000.0"
+  },
+  "currency_out": {
+   "symbol": "USDC.e",
+   "chain_id": 137,
+   "amount": "249949.996726"
+  }
+ },
+ {
+  "transfer": "0x2214b0ecc22e456f54521e1f8f64ad27c23f633ad09516e79d642c7441a166ca",
+  "relay_request_id": "0x003ff9024e63103ef36183cddaeb74b3a137e92a9f1353b9916dc8a2bf135b0f",
+  "status": "success",
+  "user": "0xdfdcd929644e720a472e246d257dfa4bbcf8c7c7",
+  "recipient": "0x46E53b77c9c483832DFfd2040bef0F8E9C5dD234",
+  "in_txs": [
+   {
+    "chain_id": 137,
+    "hash": "0x2214b0ecc22e456f54521e1f8f64ad27c23f633ad09516e79d642c7441a166ca",
+    "timestamp": 1777034518
+   }
+  ],
+  "out_txs": [
+   {
+    "chain_id": 137,
+    "hash": "0x27f7fcbad92c7db6f862ffc1bc37250e3828538d1d9b7f26a0c36023daab28ce",
+    "timestamp": 1777034522
+   }
+  ],
+  "currency_in": {
+   "symbol": "USDC.e",
+   "chain_id": 137,
+   "amount": "500.0"
+  },
+  "currency_out": {
+   "symbol": "USDC",
+   "chain_id": 137,
+   "amount": "499.598647"
+  }
+ },
+ {
+  "transfer": "0xa2edaeb6f13dd1497034552833996ae51afaa9bbc2ef2f682bdb0a63784f0c40",
+  "relay_request_id": "0xc1b64e3745ed9b686c1d6c1b6a6d91c112c0f27ba358c04dec2d78e61092f356",
+  "status": "success",
+  "user": "0xdfdcd929644e720a472e246d257dfa4bbcf8c7c7",
+  "recipient": "0x46E53b77c9c483832DFfd2040bef0F8E9C5dD234",
+  "in_txs": [
+   {
+    "chain_id": 137,
+    "hash": "0xa2edaeb6f13dd1497034552833996ae51afaa9bbc2ef2f682bdb0a63784f0c40",
+    "timestamp": 1777034666
+   }
+  ],
+  "out_txs": [
+   {
+    "chain_id": 137,
+    "hash": "0xd56435cef3a651ff4e60216cc43f2539e000d5a77f2c5f44c50a29052fce3ce5",
+    "timestamp": 1777034674
+   }
+  ],
+  "currency_in": {
+   "symbol": "USDC.e",
+   "chain_id": 137,
+   "amount": "517663.649481"
+  },
+  "currency_out": {
+   "symbol": "USDC",
+   "chain_id": 137,
+   "amount": "517404.791381"
+  }
+ }
+]

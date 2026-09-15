@@ -1,0 +1,11 @@
+case,proxy_wallet,meaning
+Hungary,0xdfdcd929644e720a472e246d257dfa4bbcf8c7c7,"Public address, not personal identification"
+Venezuela,0x31a56e9e690c621ed21de08cb559e9524cdb8ed9,Matches the truncated address 0x31a5...8ed9 in the CFTC complaint (p. 12); link to a person rests on the legal filings
+Iran,0x1caa6a7ad0c6916aef7b67946de2e57ad24846a0,Account reported by Bubblemaps and matched to public records; not a personal identification
+Iran,0x38745db27f7360a287f6ca3c9b6a6a9c76149801,Account reported by Bubblemaps and matched to public records; not a personal identification
+Iran,0xdde15ebd95330ce69136dc0ccd810d22382e02c5,Account reported by Bubblemaps and matched to public records; not a personal identification
+Iran,0x56efadc9defe5b7a21af751e0d026f2cf54136db,Account reported by Bubblemaps and matched to public records; not a personal identification
+Iran,0x3811e09bb2fa30aff16d9be28c09ee9bba478f61,Account reported by Bubblemaps and matched to public records; not a personal identification
+Hungary funding,0x46e53b77c9c483832dffd2040bef0f8e9c5dd234,Unlabelled address that funded the trading account and received the withdrawals
+Hungary funding,0x0853ea40b121f9135d7e0c07fae35d59aedb4d0b,Unlabelled high-volume address; sent the first tranche
+Hungary funding,0xee7ae85f2fe2239e27d9c1e23fffe168d63b4055,Labelled Binance: Hot Wallet 34 in the Polygonscan public name tags; sent the second tranche

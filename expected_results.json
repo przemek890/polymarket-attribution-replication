@@ -1,0 +1,174 @@
+{
+  "ukraine": {
+    "price_observations": 1196,
+    "raw_trade_records": 2000,
+    "unique_trade_records": 1974,
+    "focal_trade_records": 115,
+    "focal_wallets": 28,
+    "highlighted_prices": [
+      {
+        "t": 1772813124,
+        "p": "0.38"
+      },
+      {
+        "t": 1772813423,
+        "p": "0.905"
+      }
+    ],
+    "price_increase_percent": "138.1578947368421052631578947"
+  },
+  "hungary": {
+    "raw_activity_records": 145,
+    "trade_records": 141,
+    "buy_records": 95,
+    "sell_records": 46,
+    "bought_shares": "405156.796641",
+    "sold_shares": "405156.724887",
+    "purchase_expenditure": "280952.240363",
+    "sale_proceeds": "399105.158284",
+    "trade_cash_flow_difference": "118152.917921",
+    "platform_realized_pnl": "118158.563",
+    "pnl_difference": "5.645079",
+    "residual_observed_shares": "0.071754",
+    "largest_execution_shares": 140000,
+    "largest_execution_price": "0.72",
+    "largest_execution_timestamp": 1775831729,
+    "scheduled_polling_close_timestamp": 1776013200,
+    "seconds_to_scheduled_polling_close": 181471,
+    "inbound_transfer_total": "399919.995093",
+    "outbound_transfer_total": "518163.649481"
+  },
+  "venezuela": {
+    "activity_records": 19,
+    "purchase_records": 13,
+    "purchase_cost": "33934.339992",
+    "sale_records": 2,
+    "redemption_records": 4,
+    "proceeds": "443815.290981",
+    "proceeds_minus_cost": "409880.950989",
+    "markets": [
+      "Maduro out by January 31, 2026?",
+      "Trump invokes War Powers against Venezuela by January 31?",
+      "US forces in Venezuela by January 31, 2026?",
+      "Will the U.S. invade Venezuela by January 31, 2026?"
+    ],
+    "first_purchase_timestamp": 1766811941,
+    "last_purchase_timestamp": 1767409105
+  },
+  "iran": {
+    "accounts": 5,
+    "focal_purchases": 190,
+    "shares_bought": "1065775.127844",
+    "purchase_cost": "137216.265599",
+    "redemption_records": 7,
+    "redemption_proceeds": "1065775.127844",
+    "net_gain": "928558.862245",
+    "first_purchase_timestamp": 1772055606,
+    "last_purchase_timestamp": 1772254103,
+    "accounts_first_active_from_24_february": 4,
+    "price_jump_timestamp": 1772259202,
+    "price_before_jump": "0.255",
+    "price_after_jump": "0.435"
+  },
+  "hungary_funding": {
+    "transfer_records": 16,
+    "inbound_to_common_address": "918124.390628",
+    "tranche_senders": [
+      "0x0853ea40b121f9135d7e0c07fae35d59aedb4d0b",
+      "0xee7ae85f2fe2239e27d9c1e23fffe168d63b4055",
+      "0xf70da97812cb96acdf810712aa562db8dfa3dbef"
+    ],
+    "tranche_amounts": [
+      "150000.0",
+      "250000.0",
+      "517404.791381"
+    ],
+    "tranche_timestamps": [
+      1775664125,
+      1775747437,
+      1777034674
+    ]
+  },
+  "ukraine_focal_wallets": {
+    "wallets": 28,
+    "wallets_with_focal_purchases": 24,
+    "distinct_markets_min": 9,
+    "distinct_markets_median": 174.0,
+    "distinct_markets_max": 1664,
+    "wallets_below_cost": 3,
+    "wallets_below_ten_percent": 11,
+    "largest_focal_spent": "11173.75482",
+    "largest_focal_returned": "11552.425640",
+    "largest_focal_return_percent": "3.388930812426757722611278847"
+  },
+  "ukraine_alert_rule": {
+    "observations": 18463,
+    "first_observation": 1771897875,
+    "last_observation": 1773007157,
+    "windows_evaluated": 18462,
+    "threshold_100_percent": {
+      "windows": 5,
+      "episodes": 1,
+      "episode_starts": [
+        1772812945
+      ]
+    },
+    "threshold_75_percent": {
+      "windows": 11,
+      "episodes": 2,
+      "episode_starts": [
+        1771919237,
+        1772812945
+      ]
+    },
+    "threshold_50_percent": {
+      "windows": 15,
+      "episodes": 3,
+      "episode_starts": [
+        1771904956,
+        1771919237,
+        1772812945
+      ]
+    },
+    "threshold_30_percent": {
+      "windows": 37,
+      "episodes": 7,
+      "episode_starts": [
+        1771898295,
+        1771903635,
+        1771904956,
+        1771919237,
+        1772191759,
+        1772692820,
+        1772812885
+      ]
+    },
+    "threshold_20_percent": {
+      "windows": 48,
+      "episodes": 10,
+      "episode_starts": [
+        1771898295,
+        1771903635,
+        1771904956,
+        1771919237,
+        1772191759,
+        1772393673,
+        1772468959,
+        1772471795,
+        1772692759,
+        1772812885
+      ]
+    }
+  },
+  "ukraine_simpler_rules": {
+    "trade_records": 2558,
+    "windows": 704,
+    "focal_rank_by_volume": 4,
+    "focal_rank_by_addresses": 1,
+    "largest_volume_window": 1772993931,
+    "largest_volume": "48945.738158",
+    "most_addresses_window": 1772813213,
+    "most_addresses": 96,
+    "addresses_in_best_window_outside_6_march": 38
+  }
+}

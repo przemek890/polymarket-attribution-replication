@@ -1,0 +1,143 @@
+[
+  {
+    "path": "data/ukraine_price_history.json",
+    "sha256": "f54f6689150a84901e981d0b9627a98efb0f1304fb284c3fd7b7ff1e39801f32",
+    "source": "Polymarket CLOB price history",
+    "request": "https://clob.polymarket.com/prices-history?market=105391427639001472447115821835665244462841164022583489501682981070692707472382&startTs=1772755200&endTs=1772827200&fidelity=1"
+  },
+  {
+    "path": "data/ukraine_market_price_history.json",
+    "sha256": "7ee58ca4a0c72f2dafac782d0623390b0285873bd6d5fd8c0d63f5230b6b7f27",
+    "source": "Polymarket CLOB price history",
+    "request": "https://clob.polymarket.com/prices-history?market=105391427639001472447115821835665244462841164022583489501682981070692707472382&startTs={t}&endTs={t+172800}&fidelity=1",
+    "note": "Seven consecutive 48-hour pages from 24 February 2026 00:00 UTC to resolution, concatenated and deduplicated by timestamp; the endpoint does not serve the whole life of a market in one request."
+  },
+  {
+    "path": "data/ukraine_trades.json",
+    "sha256": "5aba3706655604a55a14ef30cc3e595c0e3d7a802b914f62947b63eb1c749cc7",
+    "source": "Polymarket data API, trades",
+    "request": "https://data-api.polymarket.com/trades?market=0xac74a0513cccc90d458bca3fa754470952f8571e81ee67a1b316ad70c1cbaa52&limit=500&offset={0,500,1000,1500}&takerOnly=false",
+    "note": "Four pages concatenated; trade timestamps span 5 to 8 March 2026 UTC."
+  },
+  {
+    "path": "data/ukraine_market_trades.json",
+    "sha256": "b1ac320007e0349db4ea5d4b60166e058e6073582a9a9c02ec605f231724ec4e",
+    "source": "Polymarket data API, trades",
+    "request": "https://data-api.polymarket.com/trades?market=0xac74a0513cccc90d458bca3fa754470952f8571e81ee67a1b316ad70c1cbaa52&limit=500&offset={0,500,1000,1500,2000,2500}&takerOnly=false",
+    "note": "Every trade record the endpoint returns for this market, 2,587 rows reduced to 2,558 after the rule for identical records; used only for the comparison with simpler rules. Records are single-sided, so they support counts of volume and participants but not a position for each address. Profile fields removed."
+  },
+  {
+    "path": "data/pcpc_april_activity.json",
+    "sha256": "b7e6127b0b4ca4c8e7293dd432f2f5f3c89d4f327b0d2162ac9c6645b7de9274",
+    "source": "Polymarket data API, account activity",
+    "request": "https://data-api.polymarket.com/activity?user=0xdfdcd929644e720a472e246d257dfa4bbcf8c7c7&start=1775606400&end=1777075200&limit=500&offset=0"
+  },
+  {
+    "path": "data/pcpc_closed_positions.json",
+    "sha256": "71d67677ee5892a70c76f43264f4744afb1b512d8f7e542d6d1a4a2dac304736",
+    "source": "Polymarket data API, closed positions",
+    "request": "https://data-api.polymarket.com/closed-positions?user=0xdfdcd929644e720a472e246d257dfa4bbcf8c7c7&limit=50&offset=0"
+  },
+  {
+    "path": "data/iran_accounts_activity.json",
+    "sha256": "d5d605d978a5df90b71bd2de9f570ecb1516efa8cf9cde0b9f36d394f849151c",
+    "source": "Polymarket data API, account activity of the five reported accounts",
+    "request": "https://data-api.polymarket.com/activity?user={proxy_wallet}&start=1771200000&end=1773500000&limit=500&offset=0",
+    "note": "One request per account, keyed by address; profile fields removed. Only records of the focal condition ID are used, so the window does not affect the results."
+  },
+  {
+    "path": "data/iran_price_history.json",
+    "sha256": "b97c62d0d46e9c8d4f663d93384a8a4a6ecadb8a3423c9f31037954cc54ed7a0",
+    "source": "Polymarket CLOB price history",
+    "request": "https://clob.polymarket.com/prices-history?market=110790003121442365126855864076707686014650523258783405996925622264696084778807&startTs=1772236800&endTs=1772323200&fidelity=1",
+    "note": "YES token of the focal Iranian market on 28 February 2026."
+  },
+  {
+    "path": "data/ukraine_focal_wallet_markets.json",
+    "sha256": "cd31387471dfebe95372be605042e90782161eccf5a1bd912eca46f44888fe2d",
+    "source": "Polymarket data API, account activity",
+    "request": "https://data-api.polymarket.com/activity?user={proxy_wallet}&start=1769904000&end=1775001600&limit=500&offset={0,500,...}",
+    "note": "One request per address, paged to exhaustion, for the 28 addresses in ukraine_wallets.csv. The endpoint returns at most 5,500 records per account and window: five accounts reach that limit, and four of them are so active that their focal purchases fall outside the reachable range. The full extract of 64,076 records is not carried in the package; these two files condense it. This file holds, per address, the number of trades in each condition ID."
+  },
+  {
+    "path": "data/ukraine_focal_wallet_records.json",
+    "sha256": "3f9c22c1d922f6a0758100c845128935f7e583126d0616153cae7de03fb1ac69",
+    "source": "Polymarket data API, account activity",
+    "request": "https://data-api.polymarket.com/activity?user={proxy_wallet}&start=1769904000&end=1775001600&limit=500&offset={0,500,...}",
+    "note": "One request per address, paged to exhaustion, for the 28 addresses in ukraine_wallets.csv. The endpoint returns at most 5,500 records per account and window: five accounts reach that limit, and four of them are so active that their focal purchases fall outside the reachable range. The full extract of 64,076 records is not carried in the package; these two files condense it. This file holds every record of the Ukrainian condition ID, profile fields removed."
+  },
+  {
+    "path": "data/ukraine_metadata.json",
+    "sha256": "4ba5c6da8219d09fa2ca1809f7d901d96b08a0b6ffd2878f09e66d9c4e71c97e",
+    "source": "Polymarket Gamma API, event metadata",
+    "request": "https://gamma-api.polymarket.com/events?slug=will-ukraine-re-enter-novomykolaivka-by-march-31",
+    "note": "Contract fields only."
+  },
+  {
+    "path": "data/jesus_metadata.json",
+    "sha256": "443e1c688cdf32cc877e597125293ede11597b58b59fdf4e284d28fb22d21b33",
+    "source": "Polymarket Gamma API, event metadata",
+    "request": "https://gamma-api.polymarket.com/events?slug=will-jesus-christ-return-before-2027",
+    "note": "Contract fields only."
+  },
+  {
+    "path": "data/gta_metadata.json",
+    "sha256": "65a31dc457281e0075ed4b2c7908568f6ec6a5c532a215c81c81c238eb30096a",
+    "source": "Polymarket Gamma API, event metadata",
+    "request": "https://gamma-api.polymarket.com/events?slug=what-will-happen-before-gta-vi",
+    "note": "Contract fields only."
+  },
+  {
+    "path": "data/paris_station_metadata.json",
+    "sha256": "54bd326925506c6870caccc5feaa57af551fe5707c87307fe063922311137005",
+    "source": "Polymarket Gamma API, event metadata",
+    "request": "https://gamma-api.polymarket.com/events?slug=highest-temperature-in-paris-on-april-{18,19}-2026",
+    "note": "Contract fields only; the resolution text names Charles de Gaulle on 18 April and Le Bourget on 19 April."
+  },
+  {
+    "path": "data/market_identifiers.json",
+    "sha256": "42921a78cb7910c6ef884e8479498e25b6e6042d369c324a8c29981f190377c6",
+    "source": "Polymarket Gamma API, event metadata",
+    "request": "https://gamma-api.polymarket.com/events?slug={event_slug}",
+    "note": "Request URL recorded per event."
+  },
+  {
+    "path": "transfer_ledger.csv",
+    "sha256": "7a91f83b747533d6c0c999766e96f0541370dd5f32a78df73c4c3e56e5cf2f1a",
+    "source": "Polygon transactions",
+    "request": "https://polygonscan.com/tx/{transaction_hash}",
+    "note": "Amounts, times and explorer labels transcribed per transaction hash."
+  },
+  {
+    "path": "data/relay_requests.json",
+    "sha256": "42b70acaba40a62e781505b02f30f67cb4cfd690306420c64cede206435d743f",
+    "source": "Relay API, request records for the four transfers",
+    "request": "https://api.relay.link/requests/v2?hash={transaction_hash}",
+    "note": "Chain 137 (Polygon) on both sides of every request."
+  },
+  {
+    "path": "data/funding_chain_usdc_transfers.json",
+    "sha256": "da88adcb97e6d6e2beedac4a6bda5261b38b5505b59dd9f62427ced5012a6f31",
+    "source": "Polygon JSON-RPC, Transfer logs of the USDC contract",
+    "request": "eth_getLogs {address: 0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359, topics: [Transfer, from|to = 0x46E53b77c9c483832DFfd2040bef0F8E9C5dD234 or 0x7e91d168ab54bb2065553a4acc385481c05abb62], fromBlock: 85200000, toBlock: 86000000}",
+    "note": "Every native USDC transfer of the funding chain, taken from the token contract's own logs; imitation-token events cannot appear. Block timestamps from eth_getBlockByNumber."
+  },
+  {
+    "path": "data/venezuela_activity.json",
+    "sha256": "6b2ba54d9bce9550cd15c1c7521a7fe227d4135421679d49f6829b59b7ece69f",
+    "source": "Polymarket data API, account activity",
+    "request": "https://data-api.polymarket.com/activity?user=0x31a56e9e690c621ed21de08cb559e9524cdb8ed9&start=1766707200&end=1768003200&limit=500&offset=0",
+    "note": "Account whose address matches the truncated address in the CFTC complaint; profile fields removed."
+  },
+  {
+    "path": "market_identifiers.csv",
+    "sha256": "50c1d352d3b02a4cedb10babb3c56454aa398bb145444730171f288d56338a42",
+    "source": "Derived from data/market_identifiers.json and the case metadata"
+  },
+  {
+    "path": "wallet_identifiers.csv",
+    "sha256": "8c8faa51d5421410d3dc9cd09d1ed3fc6f97437e0ae9b398cd8dc9fea2adfa5e",
+    "source": "Public addresses of the analysed accounts and of the funding chain",
+    "note": "Public identifiers, not personal identification."
+  }
+]

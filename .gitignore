@@ -1,0 +1,8 @@
+results.json
+ukraine_prices.csv
+ukraine_focal_trades.csv
+ukraine_wallets.csv
+ukraine_focal_wallet_contrast.csv
+hungary_position.csv
+.DS_Store
+__pycache__/

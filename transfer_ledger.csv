@@ -1,0 +1,5 @@
+transaction_hash,direction,amount_usdc_e,time_utc_minute,explorer_label,url
+0x539ff1e33b7a64c19b3b44e2cc939f295a836ecde1d0312ea8184762c66957ea,in,149969.998367,2026-04-08 16:06 UTC,Relay: Solver,https://polygonscan.com/tx/0x539ff1e33b7a64c19b3b44e2cc939f295a836ecde1d0312ea8184762c66957ea
+0x661a3f51c96d439c85313b3d77b18f35f7c8aa8cf93cdc4a987b6aa11dd87280,in,249949.996726,2026-04-09 15:15 UTC,Relay: Solver,https://polygonscan.com/tx/0x661a3f51c96d439c85313b3d77b18f35f7c8aa8cf93cdc4a987b6aa11dd87280
+0x2214b0ecc22e456f54521e1f8f64ad27c23f633ad09516e79d642c7441a166ca,out,500,2026-04-24 12:41 UTC,Relay: Depository,https://polygonscan.com/tx/0x2214b0ecc22e456f54521e1f8f64ad27c23f633ad09516e79d642c7441a166ca
+0xa2edaeb6f13dd1497034552833996ae51afaa9bbc2ef2f682bdb0a63784f0c40,out,517663.649481,2026-04-24 12:44 UTC,Relay: Depository,https://polygonscan.com/tx/0xa2edaeb6f13dd1497034552833996ae51afaa9bbc2ef2f682bdb0a63784f0c40
