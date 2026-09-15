@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Replication package: capital flows and blockchain forensics on decentralised prediction markets"
+message: "If you use this package, please cite it using these metadata."
+type: dataset
+authors:
+  - family-names: Janiszewski
+    given-names: Przemysław
+  - family-names: Trzcianowski
+    given-names: Krzysztof
+license: CC-BY-4.0
+version: 1.0.0

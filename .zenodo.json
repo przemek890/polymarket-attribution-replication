@@ -5,7 +5,8 @@
   "license": "cc-by-4.0",
   "access_right": "open",
   "creators": [
-    {"name": "Janiszewski, Przemyslaw", "affiliation": ""}
+    {"name": "Janiszewski, Przemysław", "affiliation": ""},
+    {"name": "Trzcianowski, Krzysztof", "affiliation": ""}
   ],
   "keywords": ["prediction markets", "blockchain forensics", "attribution", "open-source intelligence", "reproducibility"]
 }
